@@ -12,8 +12,8 @@ const float = keyframes`
 
 // Glow animation
 const glow = keyframes`
-  0%, 100% { box-shadow: 0 0 20px rgba(139, 92, 246, 0.3); }
-  50% { box-shadow: 0 0 40px rgba(139, 92, 246, 0.6); }
+  0%, 100% { box-shadow: 0 0 20px rgba(107, 114, 128, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(107, 114, 128, 0.6); }
 `;
 
 // Pulse animation
@@ -53,7 +53,7 @@ const FloatingOrb = styled(motion.div)`
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%);
+  background: linear-gradient(135deg, rgba(107, 114, 128, 0.1) 0%, rgba(31, 41, 55, 0.1) 100%);
   filter: blur(40px);
   z-index: -1;
   animation: ${float} 6s ease-in-out infinite;
@@ -95,8 +95,8 @@ const HeroTitle = styled(motion.h1)`
 `;
 
 const NameHighlight = styled.span`
-  color: var(--primary-violet);
-  background: linear-gradient(135deg, var(--primary-violet) 0%, var(--primary-cyan) 100%);
+  color: var(--primary-gray);
+  background: linear-gradient(135deg, var(--primary-gray) 0%, var(--primary-dark) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

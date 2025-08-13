@@ -27,8 +27,8 @@ const hologramShimmer = keyframes`
 // 3D Button Component
 export const Button3D = styled(motion.button)`
   background: linear-gradient(145deg, var(--bg-glass), rgba(255, 255, 255, 0.1));
-  border: 2px solid ${props => props.color || 'var(--primary-violet)'};
-  color: ${props => props.color || 'var(--primary-violet)'};
+  border: 2px solid ${props => props.color || 'var(--primary-gray)'};
+  color: ${props => props.color || 'var(--primary-gray)'};
   padding: 1.2rem 2.5rem;
   border-radius: 12px;
   font-family: 'Space Grotesk', 'Poppins', sans-serif;
@@ -106,8 +106,8 @@ export const Card3D = styled(motion.div)`
     transform: translateY(-10px) rotateX(5deg) rotateY(5deg);
     border-color: var(--neon-cyan);
     box-shadow: 
-      0 20px 40px rgba(0, 255, 255, 0.2),
-      0 0 20px rgba(0, 255, 255, 0.1);
+      0 20px 40px rgba(107, 114, 128, 0.2),
+      0 0 20px rgba(107, 114, 128, 0.1);
   }
 `;
 
@@ -134,11 +134,11 @@ export const NeonText = styled(motion.h2)`
 export const HoloPanel = styled(motion.div)`
   background: linear-gradient(
     135deg,
-    rgba(0, 255, 255, 0.1) 0%,
-    rgba(255, 0, 128, 0.1) 50%,
-    rgba(128, 0, 255, 0.1) 100%
+    rgba(107, 114, 128, 0.1) 0%,
+    rgba(31, 41, 55, 0.1) 50%,
+    rgba(17, 24, 39, 0.1) 100%
   );
-  border: 2px solid rgba(0, 255, 255, 0.3);
+  border: 2px solid rgba(107, 114, 128, 0.3);
   border-radius: 15px;
   padding: 1.5rem;
   backdrop-filter: blur(20px);
@@ -193,8 +193,8 @@ export const FloatingButton = styled(motion.button)`
   cursor: pointer;
   z-index: 1000;
   box-shadow: 
-    0 10px 30px rgba(0, 255, 255, 0.3),
-    0 0 20px rgba(0, 255, 255, 0.2);
+    0 10px 30px rgba(107, 114, 128, 0.3),
+    0 0 20px rgba(107, 114, 128, 0.2);
   transition: all 0.3s ease;
   
   &:hover {

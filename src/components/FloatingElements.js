@@ -12,10 +12,10 @@ const float = keyframes`
 
 const glow = keyframes`
   0%, 100% {
-    box-shadow: 0 0 5px rgba(0, 212, 255, 0.5);
+    box-shadow: 0 0 5px rgba(107, 114, 128, 0.5);
   }
   50% {
-    box-shadow: 0 0 20px rgba(0, 212, 255, 0.8), 0 0 30px rgba(0, 212, 255, 0.6);
+    box-shadow: 0 0 20px rgba(107, 114, 128, 0.8), 0 0 30px rgba(107, 114, 128, 0.6);
   }
 `;
 
@@ -34,8 +34,8 @@ const FloatingElement = styled.div`
   position: absolute;
   width: ${props => props.size}px;
   height: ${props => props.size}px;
-  border: 2px solid rgba(255, 110, 199, 0.3);
-  background: rgba(255, 110, 199, 0.1);
+  border: 2px solid rgba(107, 114, 128, 0.3);
+  background: rgba(107, 114, 128, 0.1);
   animation: 
     ${float} ${props => props.duration}s ease-in-out infinite,
     ${glow} ${props => props.glowDuration}s ease-in-out infinite;
@@ -46,7 +46,7 @@ const FloatingElement = styled.div`
     height: 0;
     border-left: ${props => props.size/2}px solid transparent;
     border-right: ${props => props.size/2}px solid transparent;
-    border-bottom: ${props => props.size}px solid rgba(0, 212, 255, 0.3);
+    border-bottom: ${props => props.size}px solid rgba(107, 114, 128, 0.3);
     background: transparent;
   }
   
@@ -61,7 +61,7 @@ const FloatingElement = styled.div`
   &.hexagon {
     width: ${props => props.size}px;
     height: ${props => props.size * 0.866}px;
-    background: rgba(0, 212, 255, 0.1);
+    background: rgba(107, 114, 128, 0.1);
     border-radius: 6px;
     position: relative;
     
@@ -76,12 +76,12 @@ const FloatingElement = styled.div`
     
     &::before {
       bottom: 100%;
-      border-bottom: ${props => props.size * 0.289}px solid rgba(0, 212, 255, 0.1);
+      border-bottom: ${props => props.size * 0.289}px solid rgba(107, 114, 128, 0.1);
     }
     
     &::after {
       top: 100%;
-      border-top: ${props => props.size * 0.289}px solid rgba(0, 212, 255, 0.1);
+      border-top: ${props => props.size * 0.289}px solid rgba(107, 114, 128, 0.1);
     }
   }
 `;
@@ -90,13 +90,13 @@ const CodeSymbol = styled.div`
   position: absolute;
   font-family: 'Courier New', monospace;
   font-size: ${props => props.size}px;
-  color: rgba(255, 110, 199, 0.4);
+  color: rgba(107, 114, 128, 0.4);
   font-weight: bold;
   animation: 
     ${float} ${props => props.duration}s ease-in-out infinite,
     ${glow} ${props => props.glowDuration}s ease-in-out infinite;
   animation-delay: ${props => props.delay}s;
-  text-shadow: 0 0 10px rgba(255, 110, 199, 0.5);
+  text-shadow: 0 0 10px rgba(107, 114, 128, 0.5);
 `;
 
 const FloatingElements = () => {

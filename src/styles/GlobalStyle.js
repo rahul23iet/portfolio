@@ -2,39 +2,40 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   :root {
-    /* Two-Color Brand Palette */
-    --primary-violet: #8B5CF6; /* Violet */
-    --primary-cyan: #06B6D4;   /* Sky Blue */
+    /* Cursor-inspired Color Palette */
+    --primary-gray: #6B7280; /* Medium gray */
+    --primary-dark: #1F2937; /* Dark gray */
+    --primary-black: #111827; /* Very dark gray/black */
 
-    /* Map any former accents to the two-color system for consistency */
-    --accent-pink: var(--primary-violet);
-    --accent-orange: var(--primary-cyan);
-    --accent-emerald: var(--primary-cyan);
-    --accent-yellow: var(--primary-violet);
+    /* Map any former accents to the gray system for consistency */
+    --accent-pink: var(--primary-gray);
+    --accent-orange: var(--primary-gray);
+    --accent-emerald: var(--primary-gray);
+    --accent-yellow: var(--primary-gray);
     
-    /* Dark Backgrounds (subtle blue-violet hues) */
-    --bg-primary: #0E1024;
-    --bg-secondary: #141A2F;
-    --bg-tertiary: #0F1830;
-    --bg-glass: rgba(139, 92, 246, 0.10);
+    /* Dark Backgrounds (gray and black tones) */
+    --bg-primary: #0F0F0F;
+    --bg-secondary: #1A1A1A;
+    --bg-tertiary: #2D2D2D;
+    --bg-glass: rgba(107, 114, 128, 0.10);
     --bg-card: rgba(255, 255, 255, 0.05);
     
     /* Text Colors */
-    --text-primary: #F8FAFC;
-    --text-secondary: #E2E8F0;
-    --text-muted: #94A3B8;
-    --text-accent: var(--primary-violet);
+    --text-primary: #F9FAFB;
+    --text-secondary: #E5E7EB;
+    --text-muted: #9CA3AF;
+    --text-accent: var(--primary-gray);
     
-    /* Two-Color Gradients */
-    --gradient-primary: linear-gradient(135deg, var(--primary-violet) 0%, var(--primary-cyan) 100%);
-    --gradient-secondary: linear-gradient(135deg, var(--primary-cyan) 0%, var(--primary-violet) 100%);
+    /* Gray Gradients */
+    --gradient-primary: linear-gradient(135deg, var(--primary-gray) 0%, var(--primary-dark) 100%);
+    --gradient-secondary: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-gray) 100%);
     --gradient-accent: var(--gradient-primary);
     --gradient-hero: var(--gradient-primary);
     
-    /* Neon / Effects mapped to two-color */
-    --neon-cyan: var(--primary-cyan);
-    --neon-pink: var(--primary-violet);
-    --neon-green: var(--primary-cyan);
+    /* Effects mapped to gray tones */
+    --neon-cyan: var(--primary-gray);
+    --neon-pink: var(--primary-gray);
+    --neon-green: var(--primary-gray);
   }
 
   * {
@@ -83,12 +84,12 @@ const GlobalStyle = createGlobalStyle`
   }
 
   ::-webkit-scrollbar-thumb {
-    background: var(--primary-cyan);
+    background: var(--primary-gray);
     border-radius: 4px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #0aa3be;
+    background: #4B5563;
   }
 
   /* Responsive breakpoints */

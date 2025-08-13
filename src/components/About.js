@@ -65,9 +65,9 @@ const AboutStats = styled.div`
 `;
 
 const StatCard = styled(motion.div)`
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%);
+  background: linear-gradient(135deg, rgba(107, 114, 128, 0.1) 0%, rgba(31, 41, 55, 0.1) 100%);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(139, 92, 246, 0.3);
+  border: 1px solid rgba(107, 114, 128, 0.3);
   border-radius: 15px;
   padding: 2rem;
   text-align: center;
@@ -75,16 +75,16 @@ const StatCard = styled(motion.div)`
 
   &:hover {
     transform: translateY(-5px);
-    border-color: rgba(139, 92, 246, 0.6);
-    box-shadow: 0 10px 30px rgba(139, 92, 246, 0.2);
-    background: linear-gradient(135deg, rgba(139, 92, 246, 0.15) 0%, rgba(6, 182, 212, 0.15) 100%);
+    border-color: rgba(107, 114, 128, 0.6);
+    box-shadow: 0 10px 30px rgba(107, 114, 128, 0.2);
+    background: linear-gradient(135deg, rgba(107, 114, 128, 0.15) 0%, rgba(31, 41, 55, 0.15) 100%);
   }
 `;
 
 const StatNumber = styled.div`
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--primary-cyan);
+  color: var(--primary-gray);
   margin-bottom: 0.5rem;
 `;
 

@@ -38,9 +38,9 @@ const ProjectsGrid = styled.div`
 `;
 
 const ProjectCard = styled(motion.div)`
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.08) 0%, rgba(6, 182, 212, 0.08) 100%);
+  background: linear-gradient(135deg, rgba(107, 114, 128, 0.08) 0%, rgba(31, 41, 55, 0.08) 100%);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(139, 92, 246, 0.25);
+  border: 1px solid rgba(107, 114, 128, 0.25);
   border-radius: 20px;
   overflow: hidden;
   transition: all 0.3s ease;
@@ -48,9 +48,9 @@ const ProjectCard = styled(motion.div)`
 
   &:hover {
     transform: translateY(-10px);
-    border-color: rgba(139, 92, 246, 0.5);
-    box-shadow: 0 20px 40px rgba(139, 92, 246, 0.2);
-    background: linear-gradient(135deg, rgba(139, 92, 246, 0.12) 0%, rgba(6, 182, 212, 0.12) 100%);
+    border-color: rgba(107, 114, 128, 0.5);
+    box-shadow: 0 20px 40px rgba(107, 114, 128, 0.2);
+    background: linear-gradient(135deg, rgba(107, 114, 128, 0.12) 0%, rgba(31, 41, 55, 0.12) 100%);
   }
 `;
 

@@ -34,8 +34,8 @@ const GridLines = styled.div`
   width: 120%;
   height: 120%;
   background-image: 
-    linear-gradient(rgba(255, 110, 199, 0.1) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 110, 199, 0.1) 1px, transparent 1px);
+    linear-gradient(rgba(107, 114, 128, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(107, 114, 128, 0.1) 1px, transparent 1px);
   background-size: 50px 50px;
   animation: ${gridAnimation} 20s linear infinite;
   
@@ -46,7 +46,7 @@ const GridLines = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at 50% 50%, transparent 0%, rgba(12, 12, 12, 0.8) 70%);
+    background: radial-gradient(circle at 50% 50%, transparent 0%, rgba(15, 15, 15, 0.8) 70%);
   }
 `;
 
@@ -60,9 +60,9 @@ const Node = styled.div`
   position: absolute;
   width: 4px;
   height: 4px;
-  background: #ff6ec7;
+  background: #6B7280;
   border-radius: 50%;
-  box-shadow: 0 0 10px #ff6ec7;
+  box-shadow: 0 0 10px #6B7280;
   animation: ${pulseAnimation} 3s ease-in-out infinite;
   
   &::before {
@@ -72,7 +72,7 @@ const Node = styled.div`
     left: -10px;
     width: 24px;
     height: 24px;
-    border: 1px solid rgba(255, 110, 199, 0.2);
+    border: 1px solid rgba(107, 114, 128, 0.2);
     border-radius: 50%;
     animation: ${pulseAnimation} 2s ease-in-out infinite reverse;
   }
@@ -81,7 +81,7 @@ const Node = styled.div`
 const ConnectionLine = styled.div`
   position: absolute;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(255, 110, 199, 0.3), transparent);
+  background: linear-gradient(90deg, transparent, rgba(107, 114, 128, 0.3), transparent);
   transform-origin: left center;
   animation: ${pulseAnimation} 4s ease-in-out infinite;
 `;

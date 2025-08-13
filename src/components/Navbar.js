@@ -9,7 +9,7 @@ const Nav = styled(motion.nav)`
   left: 0;
   width: 100%;
   padding: 1rem 2rem;
-  background: rgba(12, 12, 12, 0.9);
+  background: rgba(15, 15, 15, 0.9);
   backdrop-filter: blur(10px);
   z-index: 1000;
   transition: all 0.3s ease;
@@ -30,7 +30,7 @@ const NavContainer = styled.div`
 const Logo = styled(motion.div)`
   font-size: 1.5rem;
   font-weight: 700;
-  color: #3b82f6;
+  color: var(--primary-gray);
   cursor: pointer;
 `;
 
@@ -44,7 +44,7 @@ const NavLinks = styled.div`
     right: ${props => props.isOpen ? '0' : '-100%'};
     width: 70%;
     height: 100vh;
-    background: rgba(12, 12, 12, 0.95);
+    background: rgba(15, 15, 15, 0.95);
     backdrop-filter: blur(10px);
     flex-direction: column;
     justify-content: center;
@@ -62,7 +62,7 @@ const NavLink = styled(motion.a)`
   position: relative;
 
   &:hover {
-    color: #3b82f6;
+    color: var(--primary-gray);
   }
 
   &::after {
@@ -72,7 +72,7 @@ const NavLink = styled(motion.a)`
     left: 0;
     width: 0;
     height: 2px;
-    background: #3b82f6;
+    background: var(--primary-gray);
     transition: width 0.3s ease;
   }
 

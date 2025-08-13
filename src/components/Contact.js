@@ -7,7 +7,7 @@ const ContactSection = styled.section`
   padding: 5rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
-  background: rgba(255, 255, 255, 0.02);
+  background: linear-gradient(135deg, rgba(107, 114, 128, 0.03) 0%, rgba(31, 41, 55, 0.03) 100%);
 
   @media (max-width: 768px) {
     padding: 3rem 1rem;
@@ -50,21 +50,22 @@ const ContactItem = styled(motion.div)`
   align-items: center;
   gap: 1rem;
   padding: 1.5rem;
-  background: rgba(255, 255, 255, 0.05);
+  background: linear-gradient(135deg, rgba(107, 114, 128, 0.08) 0%, rgba(31, 41, 55, 0.08) 100%);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(6, 182, 212, 0.2);
+  border: 1px solid rgba(107, 114, 128, 0.25);
   border-radius: 15px;
   transition: all 0.3s ease;
 
   &:hover {
     transform: translateX(10px);
-    border-color: rgba(6, 182, 212, 0.5);
+    border-color: rgba(107, 114, 128, 0.5);
+    background: linear-gradient(135deg, rgba(107, 114, 128, 0.12) 0%, rgba(31, 41, 55, 0.12) 100%);
   }
 `;
 
 const ContactIcon = styled.div`
   font-size: 1.5rem;
-  color: var(--primary-cyan);
+  color: var(--primary-gray);
   min-width: 24px;
 `;
 

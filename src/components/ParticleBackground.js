@@ -60,7 +60,7 @@ const ParticleBackground = () => {
                 distance: 200,
                 links: {
                   opacity: 0.8,
-                  color: "#ff6ec7",
+                  color: "#6B7280",
                 },
               },
               bubble: {
@@ -69,7 +69,7 @@ const ParticleBackground = () => {
                 duration: 2,
                 opacity: 0.8,
                 speed: 3,
-                color: "#ff9a56",
+                color: "#1F2937",
               },
               repulse: {
                 distance: 300,
@@ -80,7 +80,7 @@ const ParticleBackground = () => {
                 quantity: 5,
                 particles: {
                   color: {
-                    value: "#c77dff",
+                    value: "#9CA3AF",
                   },
                   size: {
                     value: 3,
@@ -91,17 +91,17 @@ const ParticleBackground = () => {
           },
           particles: {
             color: {
-              value: ["#ff6ec7", "#ff9a56", "#c77dff", "#7209b7", "#ffffff"],
+              value: ["#6B7280", "#9CA3AF", "#E5E7EB"],
             },
             links: {
-              color: "#ff6ec7",
+              color: "#6B7280",
               distance: 150,
               enable: true,
               opacity: 0.4,
               width: 1,
               triangles: {
                 enable: true,
-                color: "#c77dff",
+                color: "#6B7280",
                 opacity: 0.1,
               },
             },
@@ -131,10 +131,10 @@ const ParticleBackground = () => {
               value: 100,
             },
             opacity: {
-              value: 0.6,
-              random: true,
+              value: 0.8,
+              random: false,
               animation: {
-                enable: true,
+                enable: false,
                 speed: 1,
                 minimumValue: 0.1,
                 sync: false,
@@ -147,10 +147,10 @@ const ParticleBackground = () => {
               },
             },
             size: {
-              value: { min: 1, max: 6 },
+              value: { min: 2, max: 8 },
               random: true,
               animation: {
-                enable: true,
+                enable: false,
                 speed: 2,
                 minimumValue: 0.1,
                 sync: false,

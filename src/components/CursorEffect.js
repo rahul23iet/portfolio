@@ -15,16 +15,16 @@ const CursorDot = styled.div`
   position: absolute;
   width: 8px;
   height: 8px;
-  background: #ff6ec7;
+  background: #6B7280;
   border-radius: 50%;
   transform: translate(-50%, -50%);
   transition: all 0.1s ease;
-  box-shadow: 0 0 10px #ff6ec7, 0 0 20px #ff6ec7, 0 0 30px #ff6ec7;
+  box-shadow: 0 0 10px #6B7280, 0 0 20px #6B7280, 0 0 30px #6B7280;
   
   &.clicking {
     transform: translate(-50%, -50%) scale(2);
-    background: #ff9a56;
-    box-shadow: 0 0 15px #ff9a56, 0 0 30px #ff9a56, 0 0 45px #ff9a56;
+    background: #4B5563;
+    box-shadow: 0 0 15px #4B5563, 0 0 30px #4B5563, 0 0 45px #4B5563;
   }
 `;
 
@@ -32,7 +32,7 @@ const CursorRing = styled.div`
   position: absolute;
   width: 30px;
   height: 30px;
-  border: 2px solid rgba(255, 110, 199, 0.5);
+  border: 2px solid rgba(107, 114, 128, 0.5);
   border-radius: 50%;
   transform: translate(-50%, -50%);
   transition: all 0.2s ease;
@@ -40,8 +40,8 @@ const CursorRing = styled.div`
   &.hovering {
     width: 50px;
     height: 50px;
-    border-color: #ff9a56;
-    box-shadow: 0 0 20px rgba(255, 154, 86, 0.3);
+    border-color: #4B5563;
+    box-shadow: 0 0 20px rgba(75, 85, 99, 0.3);
   }
 `;
 
@@ -49,7 +49,7 @@ const TrailDot = styled.div`
   position: absolute;
   width: 4px;
   height: 4px;
-  background: rgba(255, 110, 199, 0.6);
+  background: rgba(107, 114, 128, 0.6);
   border-radius: 50%;
   transform: translate(-50%, -50%);
   pointer-events: none;
